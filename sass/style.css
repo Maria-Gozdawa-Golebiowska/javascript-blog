@@ -53,6 +53,14 @@ body {
   border-radius: 5px;
 }
 
+.sidebar-tags {
+  background: #fff;
+  margin-right: 10px;
+  padding: 50px;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
 /* Logo */
 .logo {
   font-family: "Sacramento", cursive;
