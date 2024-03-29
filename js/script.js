@@ -3,12 +3,11 @@
 const optArticleSelector = '.post';
 const optTitleSelector = '.post-title';
 const optTitleListSelector = '.titles';
-const optArticleTagSelector = '.post-tags-list';
+const optArticleTagSelector = '.post .tags-list';
 
 const titleClickHandler = function (event) {
   event.preventDefault();
   const clickedElement = this;
-
 
   // Remove class 'active' from all article links
   const activeLinks = document.querySelectorAll('.titles a.active');
@@ -21,7 +20,7 @@ const titleClickHandler = function (event) {
 
   // Remove class 'active' from all articles
   const activeArticles = document.querySelectorAll('.posts .post.active');
-  for(const activeArticle of activeArticles) {
+  for (const activeArticle of activeArticles) {
     activeArticle.classList.remove('active');
   }
 
@@ -74,13 +73,11 @@ function generateTags (){
   const articles = document.querySelectorAll(optArticleSelector);
   console.log(articles)
 
- 
   /* START LOOP: for every article: */
   for (let article of articles);
 
     /* find tags wrapper */
     const tagWrapper = article.querySelector(optArticleTagsSelector);
-
 
     /* make html variable with empty string */
 
@@ -88,8 +85,7 @@ function generateTags (){
 
     /* split tags into array */
 
-    const articleTagsArray = articleTags.split(' ');
-    console.log(articleTagsArray);
+  const articleTagsArray = articleTags.split(' ');
 
     /* START LOOP: for each tag */
 
