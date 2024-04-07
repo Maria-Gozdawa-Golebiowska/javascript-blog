@@ -115,9 +115,15 @@ body {
 
 /* list tags */
 .tag-size-5 {
-  font-size: 110%;
-  color: green;
+  font-size: 140%;
+  color: rgb(45, 184, 45);
 }
+
+.tag-size-3 {
+color: red;
+font-size: 120%
+}
+
 
 .list a {
   text-decoration: none;
